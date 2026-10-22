@@ -1,0 +1,342 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessoria Cabral & Silva | RGB Premium</title>
+    <meta name="description" content="Assessoria Cabral & Silva: As menores taxas em empréstimos e financiamento imobiliário. Simule grátis pelo WhatsApp (13) 99791-6655 e libere seu crédito hoje mesmo.">
+    <style>
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Fundo do Site Estilo Praia do GTA 5 */
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(15, 15, 15, 0.95)), 
+                        url('https://unsplash.com') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Animação União RGB Infinita */
+        @keyframes rgb-glow {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            33% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
+            66% { border-color: #0000ff; box-shadow: 0 0 15px #0000ff; }
+            100% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+        }
+
+        @keyframes rgb-text {
+            0% { color: #ff0000; text-shadow: 0 0 8px #ff0000; }
+            33% { color: #00ff00; text-shadow: 0 0 8px #00ff00; }
+            66% { color: #0000ff; text-shadow: 0 0 8px #0000ff; }
+            100% { color: #ff0000; text-shadow: 0 0 8px #ff0000; }
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgba(10, 10, 10, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #ff0000;
+            animation: rgb-glow 6s linear infinite;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+            animation: rgb-text 6s linear infinite;
+        }
+
+        /* Botão Telefone Topo RGB */
+        .btn-assessoria {
+            background-color: #000000; 
+            color: #ffffff; 
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            border: 2px solid #ff0000; 
+            animation: rgb-glow 6s linear infinite;
+        }
+
+        .btn-assessoria:hover {
+            transform: scale(1.05);
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Seção Principal */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 800;
+            animation: rgb-text 8s linear infinite;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 35px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ccc;
+        }
+
+        /* Container do Simulador Estilo Gamer RGB */
+        .simulador-container {
+            max-width: 550px;
+            margin: 0 auto;
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #ff0000;
+            animation: rgb-glow 6s linear infinite;
+            text-align: left;
+        }
+
+        .simulador-container h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #00ff00;
+        }
+
+        /* Caixa de Explicação Dinâmica */
+        .explicacao-box {
+            background-color: #151515;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 3px solid #00ffff;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .explicacao-box strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .resultado-box {
+            background-color: #000;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 1px solid #ff0000;
+            animation: rgb-glow 6s linear infinite;
+        }
+
+        .resultado-box p {
+            font-size: 15px;
+            color: #aaa;
+        }
+
+        .resultado-box span {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ffffff;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn-simulador {
+            display: block;
+            width: 100%;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 25px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+        }
+
+        .btn-simulador:hover {
+            background-color: #00ff00;
+            color: #000;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        /* Seção de Serviços */
+        .servicos-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .servicos-section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card-servico {
+            background: rgba(10, 10, 10, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: left;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        .card-servico:hover {
+            transform: translateY(-5px);
+            border-color: #ff0000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        }
+
+        .card-servico h3 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .card-servico p {
+            color: #aaa;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn-card {
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+            border: 1px solid #555;
+        }
+
+        .btn-card:hover {
+            border-color: #00ff00;
+            color: #00ff00;
+            box-shadow: 0 0 10px rgba(0,255,0,0.3);
+        }
+
+        footer {
+            background-color: #050505;
+            color: #666;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 60px;
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .nav-container { flex-direction: column; gap: 15px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Assessoria Cabral & <span>Silva</span></div>
+            <a href="https://wa.me." target="_blank" class="btn-assessoria">
+                💬 (13) 99791-6655
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="hero">
+        <h1>Aqui você vai achar sua casa nova e seu novo lar</h1>
+        <p>Preencha os dados no painel RGB interativo para calcular instantaneamente o valor estimado.</p>
+        
+        <!-- Formulário União RGB -->
+        <div class="simulador-container">
+            <h2>Painel Gamer de Simulação</h2>
+            
+            <div class="form-group">
+                <label for="tipo">Selecione a Linha de Crédito:</label>
+                <select id="tipo" onchange="atualizarInterface()">
+                    <option value="imobiliario">🏢 Financiamento Imobiliário</option>
+                    <option value="consignado">👴 Empréstimo Consignado INSS</option>
+                    <option value="prefeitura">🏛️ Empréstimo Prefeitura / Servidor</option>
